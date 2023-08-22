@@ -47,17 +47,20 @@ alert(`Arithmetic mean: ${arithmeticMean}`);
 
 //task 5
 let variable = parseInt(prompt(`Enter the variable`));
-/*
+
 let firstPart =  ~~(variable/10000);
 console.log(firstPart);
-*/
-let secondPart = 
 
-/*
-let thirdPart = 
+let secondPart =  Math.floor((variable / 1000) % 10);
+console.log(secondPart);
 
-let fourthPart = 
+let thirdPart = Math.floor((variable / 100) % 10);
+console.log(thirdPart);
+
+let fourthPart = Math.floor((variable / 10) % 10);
+console.log(fourthPart);
 
 let fifthPart = variable % 10;
-*/
+console.log(fifthPart);
+
 alert(`Result: ${firstPart} ${secondPart} ${thirdPart} ${fourthPart} ${fifthPart}`)
